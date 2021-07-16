@@ -9,6 +9,7 @@ pipeline{
 					EXCECUTE = 'True'
 				}
 				steps{
+					sh 'printenv'
 				}
 			}
 			
