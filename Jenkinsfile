@@ -6,7 +6,6 @@ pipeline{
 					sh 'echo "Listo!"'
 				}
 			}
-			
 			stage ('Second'){
 				steps{
 					sh 'echo "Updating Second Stage"'
