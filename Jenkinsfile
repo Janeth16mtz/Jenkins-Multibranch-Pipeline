@@ -3,15 +3,11 @@ pipeline{
 		stages{
 			stage ('First'){
 				steps{
-					env.EXCECUTE = 'true'
 					sh 'Listo!'
 				}
 			}
 			
 			stage ('Second'){
-				 when {
-					environment name: 'EXCECUTE', value: 'True'
-				    }
 				steps{
 					sh 'echo "Updating Second Stage"'
 				}
