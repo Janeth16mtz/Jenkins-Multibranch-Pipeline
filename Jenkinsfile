@@ -9,7 +9,7 @@ pipeline{
 					EXCECUTE = 'True'
 				}
 				steps{
-					sh 'printenv'
+					sh 'Listo!'
 				}
 			}
 			
