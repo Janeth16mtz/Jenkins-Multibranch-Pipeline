@@ -3,17 +3,13 @@ pipeline{
 		stages{
 			stage ('One'){
 				steps{
-					script{
-						env.VARIABLE="value"
-					}
+					sh'echo "Step One"'
 				}
 			}
 			
 			stage ('Two'){
 				steps{
-					script{
-						echo ${VARIABLE}
-					}
+					sh 'echo "Step Two"'
 				}
 			}
 			stage ('Three'){
