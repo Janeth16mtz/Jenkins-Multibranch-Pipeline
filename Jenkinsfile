@@ -6,7 +6,7 @@ pipeline{
 		stages{
 			stage ('First'){
 				environment{
-					EXCECUTE = "True"
+					EXCECUTE = 'True'
 				}
 			}
 			
