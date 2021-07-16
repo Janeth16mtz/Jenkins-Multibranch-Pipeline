@@ -2,10 +2,8 @@ pipeline{
 	agent any
 		stages{
 			stage ('First'){
-				environment{
-					EXCECUTE = 'True'
-				}
 				steps{
+					env.EXCECUTE = 'true'
 					sh 'Listo!'
 				}
 			}
