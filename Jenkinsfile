@@ -8,6 +8,8 @@ pipeline{
 				environment{
 					EXCECUTE = 'True'
 				}
+				steps{
+				}
 			}
 			
 			stage ('Second'){
